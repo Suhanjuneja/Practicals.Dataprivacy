@@ -1,0 +1,89 @@
+
+Practical 1: Data Privacy Audit of LinkedIn
+
+Aim
+
+To conduct a data privacy audit of LinkedIn and identify possible privacy risks in its data collection and protection practices.
+
+ Platform Selected
+
+Organization: LinkedIn
+Website: LinkedIn
+Privacy Policy: LinkedIn Privacy Policy
+
+ Requirements
+
+Internet connection
+Web browser
+LinkedIn account (optional)
+
+ Procedure
+
+• Visit the LinkedIn website.
+
+• Open its Privacy Policy.
+
+• Check the types of personal data collected.
+
+• Examine the use of cookies and tracking technologies.
+
+• Check data sharing with third parties.
+
+• Examine available privacy and security controls.
+
+• Identify possible privacy risks.
+
+• Suggest measures to improve privacy.
+
+Observations:-
+
+• LinkedIn collects PII such as name, email, phone number, location and professional information.
+
+• IP address, device information and usage data** may also be collected.
+
+• User data is used for personalization, recommendations, analytics and service improvement.
+
+• Cookies and tracking technologies are used for analytics, personalization and advertising.
+
+• Some information may be processed by third-party service providers and data processors
+
+
+• Public profile information such as education, skills and employment details may be visible to other users depending on privacy settings.
+
+• LinkedIn provides authentication and security controls** to protect user accounts.
+
+• Personal data may be retained for legal, operational and security purposes.
+
+ Privacy Risks Identified
+
+• Possible PII exposure in case of a security breach.
+
+• Tracking of user activity through cookies and pixels.
+
+• User profiling based on professional information and activity.
+
+• Third-party processing of user information.
+
+• Exposure of professional information through **public profiles**.
+
+ Recommendations
+
+• Avoid sharing unnecessary personal information.
+
+• Review privacy and profile-visibility settings.
+
+• Enable Multi-Factor Authentication (MFA)
+
+• Review cookie and tracking preferences.
+
+• Avoid connecting unknown third-party applications.
+
+• Use a strong and unique password.
+
+Result
+
+The Data Privacy Audit of LinkedIn was successfully performed and major areas such as PII collection, tracking technologies, third-party processing, profile visibility and security controls were identified.
+
+Conclusion
+
+LinkedIn provides privacy and security controls, but users should be careful about PII, tracking, public profile information and third-party data processing.
