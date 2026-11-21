@@ -381,5 +381,3 @@ Privacy protection requires cooperation between organizations, users, and regula
 4. Digital Personal Data Protection Rules, 2025 – Ministry of Electronics and Information Technology, Government of India.
 
 5. General Data Protection Regulation (GDPR): https://gdpr.eu/
-
-**Note:** Privacy policies and legal requirements may change over time. This analysis is based on the LinkedIn Privacy Policy effective November 3, 2025. The official policy should be consulted for the latest information.
