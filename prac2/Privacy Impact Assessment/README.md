@@ -1,31 +1,46 @@
 # Privacy Impact Assessment (PIA): AI-Based UPI Fraud Detection System
+
 ## 1. Introduction
-A **Privacy Impact Assessment (PIA)** identifies and evaluates privacy risks associated with a technology or system. This PIA focuses on an **AI-Based UPI Fraud Detection System** that uses Machine Learning to detect suspicious UPI transactions while protecting users' personal and financial information.
+
+A Privacy Impact Assessment (PIA) helps identify and understand privacy risks linked to a system. This PIA looks at an AI-based UPI fraud detection system. It explains how the system can detect suspicious transactions while helping protect users’ personal and financial information.
+
 ---
+
 ## 2. System Overview
+
 **System:** AI-Based UPI Fraud Detection System
+
 **Purpose:**
-- Detect fraudulent UPI transactions.
-- Identify unusual transaction patterns.
-- Generate fraud risk scores.
+
+- Detect potentially fraudulent UPI transactions.
+- Spot unusual transaction patterns.
+- Assign a risk score to transactions.
 - Alert users or financial institutions about suspicious activity.
-- Reduce financial fraud using AI/ML.
+- Help reduce fraud using AI and machine learning.
+
 ---
+
 ## 3. Data Collected
-The system may process:
-| Data | Purpose |
+
+To check for suspicious activity, the system may process the following information:
+
+| Data | Why it may be used |
 |---|---|
-| Transaction Amount | Detect unusual amounts |
-| Date & Time | Identify unusual transaction timing |
-| Transaction History | Analyze transaction patterns |
-| UPI ID / User Identifier | Associate transactions |
-| Device Information | Detect suspicious devices |
-| Network Information | Identify unusual access |
-| Location Information | Detect unusual locations |
-| Fraud Risk Score | Determine transaction risk |
-> **Note:** Sensitive authentication information such as UPI PINs should not be collected or stored by the fraud detection system.
+| Transaction amount | To spot unusual amounts |
+| Date and time | To identify unusual transaction timing |
+| Transaction history | To understand a user’s usual transaction patterns |
+| UPI ID or user identifier | To link transactions to the right account |
+| Device information | To identify devices linked to suspicious activity |
+| Network information | To spot unusual access |
+| Location information | To identify activity from unexpected locations |
+| Fraud risk score | To show how risky a transaction appears |
+
+> **Privacy note:** The fraud detection system should not collect or store sensitive authentication details such as UPI PINs.
+
 ---
+
 ## 4. Data Flow
+
 ```text
 UPI Transaction
        ↓
@@ -41,61 +56,62 @@ Low Risk    High Risk
    ↓            ↓
 Process      Fraud Alert
 Normally     / Review
+```
 
-⸻
+---
 
-5. Privacy Risks
+## 5. Privacy Risks
 
-Risk	Impact	Mitigation
-Unauthorized Access	High	RBAC + MFA
-Data Breach	High	Encryption
-Excessive Data Collection	High	Data Minimization
-Excessive Data Retention	High	Retention Policy
-User Profiling	High	Limit collected features
-AI Bias	High	Regular Model Testing
-False Fraud Alerts	Medium	Human Review
-Third-Party Data Sharing	Medium	Vendor Assessment
-Re-identification	High	Pseudonymization
+| Risk | Impact | Possible safeguard |
+|---|---|---|
+| Unauthorized access | High | Use role-based access control (RBAC) and multi-factor authentication (MFA) |
+| Data breach | High | Encrypt data |
+| Collecting more data than needed | High | Collect only necessary information |
+| Keeping data for too long | High | Set and follow a retention policy |
+| User profiling | High | Limit the features used |
+| AI bias | High | Test the model regularly |
+| Incorrect fraud alerts | Medium | Include human review |
+| Third-party data sharing | Medium | Assess vendors before sharing data |
+| Re-identification | High | Use pseudonymization where possible |
 
-⸻
+---
 
-6. Privacy Protection Measures
+## 6. Privacy Protection Measures
 
-The system should implement:
+The system should take practical steps to protect users’ information:
 
-* Data Minimization – Collect only necessary information.
-* Encryption – Protect data during transmission and storage.
-* Pseudonymization – Replace direct identifiers where possible.
-* Access Control – Restrict access using Role-Based Access Control (RBAC).
-* Multi-Factor Authentication – Protect administrative access.
-* Data Retention Limits – Delete or anonymize data when it is no longer required.
-* Audit Logging – Record access and important system activities.
-* Human Oversight – Review important or uncertain AI decisions.
-* Model Monitoring – Regularly test AI accuracy and bias.
+- **Data minimization:** Collect only what is needed to detect fraud.
+- **Encryption:** Protect data while it is being sent and stored.
+- **Pseudonymization:** Replace direct identifiers with other values where possible.
+- **Access control:** Let only authorized people access the data.
+- **Multi-factor authentication:** Add an extra layer of protection for administrator accounts.
+- **Data retention limits:** Delete or anonymize data when it is no longer needed.
+- **Audit logging:** Keep records of data access and important system activity.
+- **Human oversight:** Have a person review important or uncertain AI decisions.
+- **Model monitoring:** Check the model regularly for accuracy and bias.
 
-⸻
+---
 
-7. AI Privacy Risks
+## 7. AI Privacy Risks
 
-AI can introduce additional privacy risks such as:
+Using AI may create additional privacy concerns, such as:
 
-* Behavioral profiling
-* Incorrect fraud classification
-* Algorithmic bias
-* Model manipulation
-* Unauthorized access to training data
-* Re-identification of anonymized information
+- Building profiles from people’s transaction behavior
+- Incorrectly classifying a transaction as fraudulent
+- Producing biased results
+- Manipulation of the model
+- Unauthorized access to training data
+- Identifying people from information that was meant to be anonymized
 
-Mitigation
+**Ways to reduce these risks:** Regularly review the AI model, use only the training data needed, protect datasets, monitor false alerts and missed fraud, and include human review for significant decisions.
 
-Regularly audit the AI model, minimize training data, use protected datasets, monitor false positives and false negatives, and maintain human oversight for significant decisions.
+---
 
-⸻
+## 8. Privacy by Design
 
-8. Privacy by Design
+Privacy should be considered throughout the design and operation of the system:
 
-The system should follow these principles:
-
+```text
 Privacy by Design
        │
        ├── Data Minimization
@@ -106,32 +122,33 @@ Privacy by Design
        ├── Transparency
        ├── Data Retention
        └── Human Oversight
+```
 
-⸻
+---
 
-9. Recommendations
+## 9. Recommendations
 
-1. Collect only data required for fraud detection.
-2. Never store UPI PINs or authentication secrets.
+1. Collect only the information needed to detect fraud.
+2. Do not store UPI PINs or other authentication secrets.
 3. Encrypt sensitive information.
 4. Use pseudonymization wherever possible.
-5. Implement strict access controls.
-6. Regularly test AI models for bias and accuracy.
+5. Limit access to authorized people.
+6. Test AI models regularly for bias and accuracy.
 7. Provide human review for high-impact decisions.
-8. Establish clear data retention and deletion policies.
-9. Secure all APIs and third-party integrations.
-10. Conduct regular privacy and security assessments.
+8. Set clear rules for data retention and deletion.
+9. Secure APIs and third-party integrations.
+10. Review privacy and security measures regularly.
 
-⸻
+---
 
-10. Conclusion
+## 10. Conclusion
 
-The AI-Based UPI Fraud Detection System can improve digital payment security, but it also processes sensitive financial information. The major privacy risks include unauthorized access, data breaches, excessive data collection, profiling, AI bias, and inappropriate data retention.
+An AI-based UPI fraud detection system can help protect digital payments, but it also handles sensitive financial information. Privacy risks may include unauthorized access, data breaches, collecting or keeping too much data, user profiling, AI bias, and incorrect fraud alerts.
 
-By implementing Privacy by Design, data minimization, encryption, pseudonymization, access control, human oversight, and continuous AI monitoring, the system can reduce privacy risks while effectively detecting fraudulent UPI transactions.
+The system can reduce these risks by collecting only necessary data, protecting it with encryption and access controls, using pseudonymization, including human oversight, and regularly checking the AI model.
 
-PIA Status
+### PIA Status
 
-Risk Level: Medium–High
-Recommended Approach: Privacy by Design
-Review: Periodically and whenever major changes are made to the system
+**Risk Level:** Medium–High  
+**Recommended Approach:** Privacy by Design  
+**Review:** Review this assessment regularly and whenever major changes are made to the system
